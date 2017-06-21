@@ -3,8 +3,9 @@ pipeline {
   stages {
     stage('preparation') {
       steps {
+        echo 'hello from Jenkins master'
         node(label: 'docker-cloud') {
-          sh 'echo \'git command...\''
+          echo 'hello from Jenkins agent'
         }
         
       }

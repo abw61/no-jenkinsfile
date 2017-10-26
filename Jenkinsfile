@@ -10,7 +10,7 @@ pipeline {
       steps {
         parallel(
           "testing": {
-            echo 'firefox....'
+            echo 'edge'
             
           },
           "chrome": {

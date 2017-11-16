@@ -8,7 +8,7 @@ pipeline {
     }
     stage('testing') {
       parallel {
-        stage('') {
+        stage('error') {
           steps {
             node(label: 'xlarge') {
               echo 'running a test'
@@ -31,7 +31,7 @@ pipeline {
     stage('deploying') {
       steps {
         node(label: 'large') {
-          echo 'deploying...'
+          echo 'deploying to production...'
         }
         
       }

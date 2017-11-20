@@ -18,6 +18,11 @@ pipeline {
             echo 'firefox'
           }
         }
+        stage('edge') {
+          steps {
+            echo 'tsting with edge'
+          }
+        }
       }
     }
     stage('deploy') {

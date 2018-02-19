@@ -6,7 +6,7 @@ pipeline {
     
   }
   stages {
-    stage('error') {
+    stage('uild') {
       steps {
         echo 'echo building....'
       }

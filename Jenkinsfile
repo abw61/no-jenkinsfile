@@ -1,12 +1,12 @@
 pipeline {
   agent {
     docker {
-      image 'ruby-docker'
+      image 'ruby'
     }
     
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
         echo 'echo building....'
       }

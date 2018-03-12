@@ -11,9 +11,9 @@ pipeline {
         echo 'testing...'
       }
     }
-    stage('deploy to UAT') {
+    stage('deploy to prod') {
       steps {
-        echo 'deploying into UAT...'
+        echo 'deploying into prod...'
       }
     }
   }

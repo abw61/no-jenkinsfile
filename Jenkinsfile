@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('build') {
           steps {
-            echo 'i am building'
+            echo 'i am building a simple app.....'
           }
         }
         stage('') {

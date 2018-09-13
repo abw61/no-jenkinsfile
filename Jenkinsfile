@@ -8,7 +8,7 @@ pipeline {
             echo 'i am building a simple app.....'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             echo 'building on windows'
           }
@@ -22,9 +22,10 @@ pipeline {
             echo 'testing in chrome'
           }
         }
-        stage('') {
+        stage('test2') {
           steps {
             echo 'test in edge'
+            junit(testResults: 'results', healthScaleFactor: 5)
           }
         }
       }
